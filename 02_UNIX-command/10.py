@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
-filename = "popular-names.txt"
+fname_r = "popular-names.txt"
 
-f = open(filename, "r")
-datalines = f.readlines()
+with open(fname_r, mode="r") as f:
+    datalines = f.readlines()
 print(len(datalines))
-f.close()
-
