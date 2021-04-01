@@ -9,5 +9,5 @@ while not(n.isdigit()):
 n = int(n)
 
 with open(fname_r, mode="r") as f:
-    datalines = f.readlines()[:n]
+    datalines = f.readlines()[-n:]
 print(''.join(datalines))
